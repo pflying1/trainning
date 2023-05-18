@@ -46,3 +46,6 @@ const digimon = ["코로몬", "테일몬", "가브몬", "꼬부기"];
 const digimonOriginalData = ["코로몬", "테일몬", "가브몬", "어니몬"];
 
 console.log(diffFinder(digimon, pokemon, digimonOriginalData));
+console.log(pokemon);
+console.log(digimon);
+console.log(digimonOriginalData);
