@@ -1,4 +1,4 @@
-let dummyText = "아버지가 방에 들어가신다.";
+let dummyText = "아버지가방에들어가신다.";
 
 //* 1. 임의의 텍스트가 정돈되어 않은 상태로 주어졌습니다.
 //* 2. 한글의 특성상 단어의 띄어쓰기를 통해 뜻을 바로 정립해야 합니다.
@@ -20,11 +20,12 @@ let spacing = " ";
  *  * "아버지"께서 "방"에 들어가신 문장으로 띄어쓰기를 삽입하는 기능을 제작하세요.
  */
 
-function spacingLetter(text, nounData, spacing) {
+function spacingLetter(text) {
   let result = "";
-
-  return result;
+  const te = text.replace("아버지가", "아버지가 ").replace("방에", "방에 ");
+  return te;
 }
+console.log(spacingLetter(dummyText));
 
 // * 위의 함수가 제대로 작동하려면 매우복잡해지만 간단한 형태로 작성해보시기 바랍니다.
 // * 적정 수준에서 함수가 완료되었다면, 타입스크립트 방식으로 변환해보세요.
