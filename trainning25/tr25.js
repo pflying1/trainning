@@ -21,7 +21,6 @@ let spacing = " ";
  */
 
 function spacingLetter(text) {
-  let result = "";
   const te = text.replace("아버지가", "아버지가 ").replace("방에", "방에 ");
   return te;
 }
