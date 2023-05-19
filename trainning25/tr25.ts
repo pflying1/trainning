@@ -20,11 +20,15 @@ let spacing = " ";
  *  * "아버지"께서 "방"에 들어가신 문장으로 띄어쓰기를 삽입하는 기능을 제작하세요.
  */
 
-function spacingLetter(text: string[], nounData: string, spacing: string) {
+function spacingLetter(
+  text: string[],
+  nounData: string,
+  spacing: string
+): string {
   let result: string = "";
   const text1: string = nounData.slice(3, 4);
-  const text2 = nounData.slice(5, 6);
-  const text3 = nounData.slice(6, 12);
+  const text2: string = nounData.slice(5, 6);
+  const text3: string = nounData.slice(6, 12);
   result = text[0] + text1 + spacing + text[1] + text2 + spacing + text3;
   return result;
 }
